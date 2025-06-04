@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Man Mode Id</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <h1>Man Mode.Id</h1>
+    <nav>
+      <ul>
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#keranjang">Keranjang</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="beranda">
+    <h2>Selamat Datang di Man Mode.Id</h2>
+    <p>Toko fashion pria premium dengan harga terjangkau.</p>
+  </section>
+
+  <main id="produk">
+    <section class="product">
+      <img src="https://i.imgur.com/Tgj2QvY.jpeg" alt="Produk 1" />
+      <h3>Kemeja</h3>
+      <p><strong>Harga:</strong> Rp 100.000</p>
+      <p><strong>Bahan:</strong> Katun Oxford Premium</p>
+      <p><strong>Ukuran:</strong> M, L, XL</p>
+      <p class="deskripsi">Kemeja lengan panjang yang nyaman dan adem, cocok untuk kerja atau hangout.</p>
+      <button class="buy-button" onclick="tambahKeKeranjang('Kemeja', 100000)">Beli</button>
+    </section>
+
+    <section class="product">
+      <img src="https://i.imgur.com/p1wW9PQ.jpeg" alt="Produk 2" />
+      <h3>Uniqlo Pants</h3>
+      <p><strong>Harga:</strong> Rp 150.000</p>
+      <p><strong>Bahan:</strong> Katun Stretch</p>
+      <p><strong>Ukuran:</strong> 28–34</p>
+      <p class="deskripsi">Celana pendek dari Uniqlo yang stylish dan fleksibel untuk santai.</p>
+      <button class="buy-button" onclick="tambahKeKeranjang('Uniqlo Pants', 150000)">Beli</button>
+    </section>
+
+    <section class="product">
+      <img src="https://i.imgur.com/JHGc5GG.jpeg" alt="Produk 3" />
+      <h3>Veterano</h3>
+      <p><strong>Harga:</strong> Rp 200.000</p>
+      <p><strong>Bahan:</strong> Linen Premium</p>
+      <p><strong>Ukuran:</strong> All Size</p>
+      <p class="deskripsi">Kemeja pria dengan gaya klasik, cocok untuk tampilan smart casual.</p>
+      <button class="buy-button" onclick="tambahKeKeranjang('Veterano', 200000)">Beli</button>
+    </section>
+
+    <section class="product">
+      <img src="https://i.imgur.com/9sZ9nlh.jpeg" alt="Produk 4" />
+      <h3>Uniqlo Blocktech</h3>
+      <p><strong>Harga:</strong> Rp 250.000</p>
+      <p><strong>Bahan:</strong> Waterproof Windproof</p>
+      <p><strong>Ukuran:</strong> M, L</p>
+      <p class="deskripsi">Jaket tahan angin dan air, cocok untuk cuaca ekstrem.</p>
+      <button class="buy-button" onclick="tambahKeKeranjang('Uniqlo Blocktech', 250000)">Beli</button>
+    </section>
+  </main>
+
+  <section id="keranjang">
+    <h2>Keranjang Belanja</h2>
+    <ul id="daftar-keranjang"></ul>
+    <p><strong>Total:</strong> Rp <span id="total-harga">0</span></p>
+    <button onclick="kosongkanKeranjang()">Kosongkan Keranjang</button>
+    <button onclick="checkoutWA()">Checkout via WhatsApp</button>
+  </section>
+
+  <section id="tentang">
+    <h2>Tentang Kami</h2>
+    <p>Man Mode.Id adalah toko fashion pria modern yang menawarkan produk berkualitas dengan harga bersahabat Kami percaya bahwa penampilan terbaik dimulai dari pakaian yang tepat.</p>
+  </section>
+
+  <section id="kontak">
+    <h2>Hubungi Kami</h2>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:manmodeid@email.com">manmodeid@email.com</a></p>
+    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/6289652355671" target="_blank">0896 5235 5671</a></p>
+    <p><i class="fab fa-instagram"></i> <a href="https://instagram.com/manmode.id" target="_blank">@manmode.id</a></p>
+    <p><i class="fas fa-map-marker-alt"></i> Jl. Toko Online No. 123, Bandung</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Man Mode.Id. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
